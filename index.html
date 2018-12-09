@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <script src="triangle.js"></script>
   <title>Quiz Board</title>
 </head>
 
@@ -24,16 +23,100 @@
     <div class="Quiz questions">
       <div class="jumbotron">
         <h3>QUIZ QUESTIONS</h3>
-        <p>1. Why is Javscript so hard for me in general?</p>
-        <ul>
-          <li> <input type="radio" name="questionone" value="a"> Because it's learning a different languge.</li>
-          <li><input type="radio" name="questionone" value="b">Bceause you have only practiced it for all of 3 weeks.</li>
-          <li><input type="radio" name="questionone" value="c">Because you are still a newbie.</li>
-          <li><input type="radio" name="questionone" value="d">Because it just is.</li>
-        </ul>
+
+        <form id="formQuiz" class="formQuiz" action="" method="post" onsubmit="return false;">
+          <div class="question" id="question1">
+            <p>1. Javascript is ?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionOne" value="a"> a programming language.</li>
+              <li class="list-group-item"><input type="radio" name="questionOne" value="b"> a scripting language.</li>
+              <li class="list-group-item"><input type="radio" name="questionOne" value="c"> an application.</li>
+              <li class="list-group-item"><input type="radio" name="questionOne" value="d"> none of the above.</li>
+            </ul>
+          </div>
+          <div class="question" id="question2">
+            <p>2. Javscript is  ?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionTwo" value="a"> a browser side scripting language.</li>
+              <li class="list-group-item"><input type="radio" name="questionTwo" value="b"> an ISP scripting language.</li>
+              <li class="list-group-item"><input type="radio" name="questionTwo" value="c"> a server scripting language.</li>
+              <li class="list-group-item"><input type="radio" name="questionTwo" value="d"> none of these.</li>
+            </ul>
+          </div>
+          <div class="question" id="question3">
+            <p>3.Javscript is designed to?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionThree" value="a"> style HTML pages.</li>
+              <li class="list-group-item"><input type="radio" name="questionThree" value="b"> add interactivity to HTML pages.</li>
+              <li class="list-group-item"><input type="radio" name="questionThree" value="c"> perform server side scripting operation.</li>
+              <li class="list-group-item"><input type="radio" name="questionThree" value="d"> execute query related to DB on server.</li>
+            </ul>
+          </div>
+          <div class="question" id="question4">
+            <p>4. Javscript can be written?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionFour" value="a"> directly on the server script.</li>
+              <li class="list-group-item"><input type="radio" name="questionFour" value="b"> directly into the HTML pages.</li>
+              <li class="list-group-item"><input type="radio" name="questionFour" value="c"> directly into the js file and included into HTML.</li>
+              <li class="list-group-item"><input type="radio" name="questionFour" value="d"> none of the above.</li>
+            </ul>
+          </div>
+          <div class="question" id="question5">
+            <p>5. Javscript is ?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionFive" value="a"> a compiled languge.</li>
+              <li class="list-group-item"><input type="radio" name="questionFive" value="b"> a foreign language.</li>
+              <li class="list-group-item"><input type="radio" name="questionFive" value="c"> an interpreted langugae</li>
+              <li class="list-group-item"><input type="radio" name="questionFive" value="d"> none of the above.</li>
+            </ul>
+          </div>
+          <div class="question" id="question6">
+            <p>6. The cost of using Javscript in your HTML is ?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionSix" value="a"> Ksh.10,000.</li>
+              <li class="list-group-item"><input type="radio" name="questionSix" value="b"> Ksh.100,000.</li>
+              <li class="list-group-item"><input type="radio" name="questionSix" value="c"> Ksh.1,000,000.</li>
+              <li class="list-group-item"><input type="radio" name="questionSix" value="d"> free.</li>
+            </ul>
+          </div>
+          <div class="question" id="question7">
+            <p>7. Javscript code is written inside files having the extension?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionSeven" value="a"> .jsc.</li>
+              <li class="list-group-item"><input type="radio" name="questionSeven" value="b"> .javascript.</li>
+              <li class="list-group-item"><input type="radio" name="questionSeven" value="c"> .jvs.</li>
+              <li class="list-group-item"><input type="radio" name="questionSeven" value="d"> .js.</li>
+            </ul>
+          </div>
+          <div class="question" id="question8">
+            <p>8. Javascript is called a lightweight programming language?</p>
+            <ul class="list-group">
+              <li class="list-group-item"> <input type="radio" name="questionEight" value="a"> because JS can provide programming functionality inside but up to a certain extend.</li>
+              <li class="list-group-item"><input type="radio" name="questionEight" value="b"> Because js is available free of cost.</li>
+              <li class="list-group-item"><input type="radio" name="questionEight" value="c"> because js is client side scripting .</li>
+              <li class="list-group-item"><input type="radio" name="questionEight" value="d"> because we can add programming functionality inside js.</li>
+            </ul>
+          </div>
+
+          <div class="form-group">
+            <button type="button" name="button" class="btn btn-primary" onclick="showSelected()">submit</button>
+          </div>
+
+          <div class="alert alert-danger error" style="display: none;">
+            <p>You must answer all the questions</p>
+          </div>
+
+      </div>
+      </form>
+      <div class="results" style="display:none;">
+        <h3>Your score is</h3>
+        <span class="score">0</span>
       </div>
     </div>
   </div>
+  </div>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 
 </html>
