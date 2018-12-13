@@ -11,10 +11,10 @@ function showSelected() {
   var questionOneAnswer = $("input[name=questionOne]:checked").val();
   var questionTwoAnswer = $("input[name=questionTwo]:checked").val();
   var questionThreeAnswer = $("input[name=questionThree]:checked").val();
-  if(questionOneAnswer==null || questionTwoAnswer==null || questionThreeAnswer==null) {
+  if (questionOneAnswer == null || questionTwoAnswer == null || questionThreeAnswer == null || questionFourAnswer == null || || questionFiveAnswer == null || || questionSixAnswer == null || || questionSevenAnswer == null || || questionEightAnswer == null || ) {
     console.log('You did not answer all the questions');
     $('.error').fadeIn();
-  }else{
+  } else {
     $('.error').fadeOut();
     $('form').fadeOut();
     //process the user answers
@@ -38,11 +38,31 @@ function showSelected() {
       //Assign marks to correct answer
       score = score + 12;
     }
+    if (questionFourAnswer == "c") {
+      //Assign marks to correct answer
+      score = score + 12;
+    }
+    if (questionFiveAnswer == "c") {
+      //Assign marks to correct answer
+      score = score + 12;
+    }
+    if (questionSixAnswer == "d") {
+      //Assign marks to correct answer
+      score = score + 12;
+    }
+    if (questionSevenAnswer == "c") {
+      //Assign marks to correct answer
+      score = score + 12;
+    }
+    if (questionEightAnswer == "a") {
+      //Assign marks to correct answer
+      score = score + 12;
+    }
+
     console.log(score);
     var scoreHolder = document.getElementsByClassName('score')[0];
     scoreHolder.textContent = score;
     $('.results').fadeIn();
-    //$('.score').text(score);
   }
 
 }
