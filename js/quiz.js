@@ -11,6 +11,11 @@ function showSelected() {
   var questionOneAnswer = $("input[name=questionOne]:checked").val();
   var questionTwoAnswer = $("input[name=questionTwo]:checked").val();
   var questionThreeAnswer = $("input[name=questionThree]:checked").val();
+  var questionFourAnswer = $("input[name=questionFour]:checked").val();
+  var questionFiveAnswer = $("input[name=questionFive]:checked").val();
+  var questionSixAnswer = $("input[name=questionSix]:checked").val();
+  var questionSevenAnswer = $("input[name=questionSeven]:checked").val();
+  var questionEightAnswer = $("input[name=questionEight]:checked").val();
   if (questionOneAnswer == null || questionTwoAnswer == null || questionThreeAnswer == null || questionFourAnswer == null || || questionFiveAnswer == null || || questionSixAnswer == null || || questionSevenAnswer == null || || questionEightAnswer == null || ) {
     console.log('You did not answer all the questions');
     $('.error').fadeIn();
