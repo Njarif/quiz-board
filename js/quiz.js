@@ -16,7 +16,7 @@ function showSelected() {
   var questionSixAnswer = $("input[name=questionSix]:checked").val();
   var questionSevenAnswer = $("input[name=questionSeven]:checked").val();
   var questionEightAnswer = $("input[name=questionEight]:checked").val();
-  if (questionOneAnswer == null || questionTwoAnswer == null || questionThreeAnswer == null || questionFourAnswer == null || || questionFiveAnswer == null || || questionSixAnswer == null || || questionSevenAnswer == null || || questionEightAnswer == null || ) {
+  if (questionOneAnswer == null || questionTwoAnswer == null || questionThreeAnswer == null || questionFourAnswer == null || questionFiveAnswer == null || questionSixAnswer == null || questionSevenAnswer == null || questionEightAnswer == null || ) {
     console.log('You did not answer all the questions');
     $('.error').fadeIn();
   } else {
