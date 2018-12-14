@@ -21,9 +21,6 @@ There are no known bugs at this point but if found please reach out to me on abc
 * bootstrap/css
 * JavaScript
 * jquery
-## Authors
-Francis Mwangi - Responsible for the whole project.
-
 ### License
 This project is licensed under the MIT License.Copyright (c) {2018}
 
