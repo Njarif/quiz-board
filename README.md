@@ -1,9 +1,9 @@
-#Quiz Board
+# Quiz Board
 This website is a short quiz to test how much students of the after school computer class have grasped after finishing a course on JavaScript. It contains carefully selected and tricky questions that will gauge how much they have learnt during the course.It's a multiple choice quiz with eight questions that are graded differently. Each question is 15 marks and the maximum a student can score is 120 (15*8).
  #### By **Francis Mwangi**
-#Getting Started
+### Getting Started
 The quiz is loaded immediately the site loads. All the student needs to do is read the questions carefully and select an answer from any of the four multiple choices listed on each question.
-#Prerequisites
+## Prerequisites
 * The user will need a strong internet connection.
 * The web address for the site where the quiz is located.( Quiz web address is )
 * As it's a simple website, there are no dependancies, databases to set up or any other code required to run the site.
@@ -14,16 +14,18 @@ The quiz is loaded immediately the site loads. All the student needs to do is re
 * The answers selected are then evaluated to determine the correct and wrong answers.
 * The correct answers are awarded 15 marks for every correct answer and 0 marks for every wrong answer.
 * The results(total marks earned) are then displayed to the user.
-#Built With
+## Known Bugs
+There are no known bugs at this point but if found please reach out to me on abcdef@gmail.com and I will happily attend to them as soon as possible.
+## Built With
 HTML
 bootstrap/css
 JavaScript
 jquery
-#Authors
+## Authors
 Francis Mwangi - Responsible for the whole project.
 
-#License
-This project is licensed under the MIT License.
+### License
+This project is licensed under the MIT License.Copyright (c) {2018}
 
-#Acknowledgments
+## Acknowledgments
 Hat tip to the people at MDN Web Docs whose fantastic tutorials enabled me to make sense of most of this project, to my peer programmer of the week and to Moringa School for getting me this far.
