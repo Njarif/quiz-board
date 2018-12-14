@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/css.styles">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <title>Quiz Board</title>
 </head>
 
 <body background="images/school.jpg">
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" id="title">
       <h1>END OF SEMESTER QUIZ</h1>
       <p>Please follow ALL the instructions carefully.</p>
       <p>Instructions</p>
@@ -21,7 +21,7 @@
       </ol>
       <p>Best of luck to you</p>
     </div>
-    <div class="Quiz Questions">
+    <div class="Quiz_Questions">
       <div class="jumbotron">
         <h3>QUIZ QUESTIONS</h3>
 
@@ -109,7 +109,7 @@
 
       </div>
       </form>
-      <div class="results" style="display:none;">
+      <div class="results" style="display:none;" class="jumbotron">
         <h3>Your score is</h3>
         <span class="score">0</span>
       </div>
