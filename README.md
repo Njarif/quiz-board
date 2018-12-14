@@ -8,7 +8,7 @@ The quiz is loaded immediately the site loads. All the student needs to do is re
 * The web address for the site where the quiz is located.( Quiz web address is )
 * As it's a simple website, there are no dependancies, databases to set up or any other code required to run the site.
 ## Behaviour driven Development (BDD)
-*  The user selects only one answer per question.
+* The user selects only one answer per question.
 * The user has to choose an answer for all eight questions for in order to submit their quiz.
 * Once the user is finished with the quiz the user submits the quiz for evaluation.
 * The answers selected are then evaluated to determine the correct and wrong answers.
@@ -17,10 +17,10 @@ The quiz is loaded immediately the site loads. All the student needs to do is re
 ## Known Bugs
 There are no known bugs at this point but if found please reach out to me on abcdef@gmail.com and I will happily attend to them as soon as possible.
 ## Built With
-HTML
-bootstrap/css
-JavaScript
-jquery
+* HTML
+* bootstrap/css
+* JavaScript
+* jquery
 ## Authors
 Francis Mwangi - Responsible for the whole project.
 
