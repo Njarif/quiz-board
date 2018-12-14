@@ -1,11 +1,11 @@
 # Quiz Board
-This website is a short quiz to test how much students of the after school computer class have grasped after finishing a course on JavaScript. It contains carefully selected and tricky questions that will gauge how much they have learnt during the course.It's a multiple choice quiz with eight questions that are graded differently. Each question is 15 marks and the maximum a student can score is 120 (15*8).
+This website is a short quiz to test how much students of the after school computer class have grasped after finishing a course on JavaScript. It contains carefully selected and tricky questions that will gauge how much they have learnt during the course.It's a multiple choice quiz with eight questions that are graded equally. Each question is 15 marks and the maximum a student can score is 120 (15*8).
  #### By **Francis Mwangi**
 ### Getting Started
 The quiz is loaded immediately the site loads. All the student needs to do is read the questions carefully and select an answer from any of the four multiple choices listed on each question.
 ## Prerequisites
 * The user will need a strong internet connection.
-* The web address for the site where the quiz is located.( Quiz web address is )
+* The web address for the site where the quiz is located.( The quiz web address is )
 * As it's a simple website, there are no dependancies, databases to set up or any other code required to run the site.
 ## Behaviour driven Development (BDD)
 * The user selects only one answer per question.
